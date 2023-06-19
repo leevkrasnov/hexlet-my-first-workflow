@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hexlet-my-first-workflow"
+version = "0.1.0"
+description = ""
+authors = ["Lev Krasnov <leevakrasnov@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "hexlet_my_first_workflow"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+say-hello = "scripts.say_hello:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
